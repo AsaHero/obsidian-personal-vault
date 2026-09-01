@@ -42,6 +42,8 @@ for idx, val := range arr {
 ### Array always in stack ? 
 Воперых, да массив создается в стэке, если не учитывать escape analysis (см. также [[Functions#Inlining|оптимизации компилятора]]), только есть ограчниние по памяти и это <=10 МБ.  Если массив больше 10 МБ, то он уходит в HEAP.
 
+Подробный разбор самого механизма escape analysis (лимиты, `-gcflags '-m'`, что именно "заразительно" убегает в кучу) — в [[Allocators#Object Allocation: Escape Analysis|Allocators]].
+
 ### Array in stack has static memory address ?
 Нет, может пригыть с одного адресса в другой. Но если вы HEAP, будет статичный. 
 ## Slices
@@ -191,6 +193,8 @@ func main() {
 Вопервых, да обычно слайс аллоцируется в heap, только если его размер больше 64 КБ. Если массив слайса меньше или равно 64КБ то массив создается в стеке. Но не забываем про [[Functions#Inlining|escape analysis]]. 
 
 Но есть момент, когда на слайс с размер меньше 64КБ, сдлеать append перевышающий cap, то новый слайс создается в heap, вне зависимости маленького размера!
+
+Полное объяснение, что вообще решает эту судьбу (стек или куча) — [[Allocators#Object Allocation: Escape Analysis|Allocators]].
 
 ## Nuances of arrays and slices
 

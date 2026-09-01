@@ -4,49 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "72df1f209980311d",
-        "type": "split",
+        "id": "12453817ef79befc",
+        "type": "tabs",
         "children": [
           {
-            "id": "2c9ad45fa4f3a888",
-            "type": "tabs",
-            "dimension": 75.07102272727273,
-            "children": [
-              {
-                "id": "bab87e779110e500",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "DeepGo/Interface.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Interface"
-                }
-              }
-            ]
-          },
-          {
-            "id": "12453817ef79befc",
-            "type": "tabs",
-            "dimension": 24.928977272727273,
-            "children": [
-              {
-                "id": "9b57efd688f092d3",
-                "type": "leaf",
-                "state": {
-                  "type": "terminal-view",
-                  "state": {},
-                  "icon": "terminal",
-                  "title": "Terminal"
-                }
-              }
-            ]
+            "id": "9b57efd688f092d3",
+            "type": "leaf",
+            "state": {
+              "type": "terminal-view",
+              "state": {},
+              "icon": "terminal",
+              "title": "Claude Code"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,17 +93,16 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ML/Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Model"
+              "title": "Backlinks"
             }
           },
           {
@@ -168,7 +138,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DeepGo/Interface.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -177,8 +146,7 @@
               "title": "Outline"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "6aba92e300478520",
@@ -191,7 +159,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DeepGo/Interface.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -245,11 +212,21 @@
   },
   "active": "9b57efd688f092d3",
   "lastOpenFiles": [
-    "DeepGo/Maps.md",
     "DeepGo/Interface.md",
     "DeepGo/Generics.md",
+    "DeepGo/Allocators.md",
+    "DeepGo/Array and Slices.md.tmp.13701.2f15e43c5dd2",
+    "DeepGo/Allocators.md.tmp.13701.acec2d1b3e4b",
+    "DeepGo/Allocators.md.tmp.13701.b80362967bf4",
+    "DeepGo/Context.md.tmp.13701.18d607e678a8",
+    "DeepGo/Context.md.tmp.13701.46e9c44a9248",
+    "DeepGo/Channels.md.tmp.13701.c81cc912f24a",
+    "DeepGo/Channels.md.tmp.13701.583cbcc78370",
+    "DeepGo/Channels.md.tmp.13701.756962e1442f",
+    "DeepGo/Goroutines.md.tmp.13701.848b7c50775d",
+    "DeepGo/Reflection.md.tmp.13701.7a8d2f6cf569",
+    "DeepGo/Maps.md",
     "DeepGo/Reflection.md",
-    "Software Deisgn",
     "Me/Multilingual City Search Engine.md",
     "Insight/Photon paradox.excalidraw.md",
     "ML tasks/Vector Search.md",
@@ -275,21 +252,10 @@
     "DeepGo/Iterators.md",
     "Me/CV.md",
     "DeepGo/Swiss Tables.md",
-    "DeepGo/Allocators.md",
     "DeepGo/Context.md",
     "DeepGo/Channels.md",
-    "DeepGo/Synchronization Primitives.md",
     "DeepGo/Pasted image 20260830010047.png",
     "DeepGo/Pasted image 20260802181054.png",
-    "DeepGo/Maps.md.tmp.31584.1784368626112",
-    "DeepGo/Structs.md.tmp.31584.1784368619139",
-    "DeepGo/Structs.md.tmp.31584.1784368612185",
-    "DeepGo/Structs.md.tmp.31584.1784368599958",
-    "DeepGo/Structs.md.tmp.31584.1784368595200",
-    "DeepGo/Structs.md.tmp.31584.1784368588840",
-    "DeepGo/Structs.md.tmp.31584.1784368584026",
-    "DeepGo/Structs.md.tmp.31584.1784368578318",
-    "DeepGo/Structs.md.tmp.31584.1784368573682",
     "DeepGo/Pasted image 20260607004146.png",
     "YouTube/Plan/Brainstorm.canvas"
   ]
