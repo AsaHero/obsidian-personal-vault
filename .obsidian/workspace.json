@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "12453817ef79befc",
+        "id": "dc34b2818146bd65",
         "type": "tabs",
         "children": [
           {
-            "id": "9b57efd688f092d3",
+            "id": "65d1e0da9685c555",
             "type": "leaf",
             "state": {
-              "type": "terminal-view",
-              "state": {},
-              "icon": "terminal",
-              "title": "Claude Code"
+              "type": "markdown",
+              "state": {
+                "file": "Concurrency in Go/Fundamental Knowledge.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fundamental Knowledge"
             }
           }
         ]
@@ -36,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse",
+                "sortOrder": "byCreatedTime",
                 "autoReveal": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -76,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 624.5
+    "width": 527.5
   },
   "right": {
     "id": "98d76eeb831f47ea",
@@ -93,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Concurrency in Go/Fundamental Knowledge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,6 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Concurrency in Go/Fundamental Knowledge.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -145,8 +151,19 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "97753dddfca38791",
+            "type": "leaf",
+            "state": {
+              "type": "terminal-view",
+              "state": {},
+              "icon": "terminal",
+              "title": "Terminal"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "6aba92e300478520",
@@ -159,6 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Concurrency in Go/Fundamental Knowledge.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -188,12 +206,23 @@
               "icon": "lucide-git-fork",
               "title": "Local graph"
             }
+          },
+          {
+            "id": "9b57efd688f092d3",
+            "type": "leaf",
+            "state": {
+              "type": "terminal-view",
+              "state": {},
+              "icon": "terminal",
+              "title": "Terminal"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 435.5
+    "width": 610.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,8 +241,16 @@
   },
   "active": "9b57efd688f092d3",
   "lastOpenFiles": [
-    "DeepGo/Interface.md",
+    "Software Deisgn/WhatsApp/WhatsApp_1.excalidraw.md",
+    "Concurrency in Go/Fundamental Knowledge.md",
+    "Concurrency in Go",
+    "DeepGo/Homework",
     "DeepGo/Generics.md",
+    "Excalidraw/Drawing 2026-09-01 22.01.52.excalidraw.md",
+    "Software Deisgn/Untitled.md",
+    "Excalidraw",
+    "Software Deisgn/WhatsApp",
+    "DeepGo/Interface.md",
     "DeepGo/Allocators.md",
     "DeepGo/Array and Slices.md.tmp.13701.2f15e43c5dd2",
     "DeepGo/Allocators.md.tmp.13701.acec2d1b3e4b",
@@ -221,10 +258,6 @@
     "DeepGo/Context.md.tmp.13701.18d607e678a8",
     "DeepGo/Context.md.tmp.13701.46e9c44a9248",
     "DeepGo/Channels.md.tmp.13701.c81cc912f24a",
-    "DeepGo/Channels.md.tmp.13701.583cbcc78370",
-    "DeepGo/Channels.md.tmp.13701.756962e1442f",
-    "DeepGo/Goroutines.md.tmp.13701.848b7c50775d",
-    "DeepGo/Reflection.md.tmp.13701.7a8d2f6cf569",
     "DeepGo/Maps.md",
     "DeepGo/Reflection.md",
     "Me/Multilingual City Search Engine.md",
@@ -251,9 +284,6 @@
     "Astronomy/Space Science (Astronomy).md",
     "DeepGo/Iterators.md",
     "Me/CV.md",
-    "DeepGo/Swiss Tables.md",
-    "DeepGo/Context.md",
-    "DeepGo/Channels.md",
     "DeepGo/Pasted image 20260830010047.png",
     "DeepGo/Pasted image 20260802181054.png",
     "DeepGo/Pasted image 20260607004146.png",

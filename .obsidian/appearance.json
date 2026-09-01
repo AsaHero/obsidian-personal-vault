@@ -1,6 +1,7 @@
 {
   "accentColor": "#9900ff",
-  "cssTheme": "Obsidian gruvbox",
+  "cssTheme": "Typewriter",
   "baseFontSize": 20,
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "nativeMenus": false
 }
