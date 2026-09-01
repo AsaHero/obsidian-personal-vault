@@ -10,15 +10,20 @@
           {
             "id": "2c9ad45fa4f3a888",
             "type": "tabs",
+            "dimension": 75.07102272727273,
             "children": [
               {
                 "id": "bab87e779110e500",
                 "type": "leaf",
                 "state": {
-                  "type": "empty",
-                  "state": {},
+                  "type": "markdown",
+                  "state": {
+                    "file": "DeepGo/Interface.md",
+                    "mode": "source",
+                    "source": false
+                  },
                   "icon": "lucide-file",
-                  "title": "New tab"
+                  "title": "Interface"
                 }
               }
             ]
@@ -26,6 +31,7 @@
           {
             "id": "12453817ef79befc",
             "type": "tabs",
+            "dimension": 24.928977272727273,
             "children": [
               {
                 "id": "9b57efd688f092d3",
@@ -108,7 +114,7 @@
       {
         "id": "7c97620ef49eba6f",
         "type": "tabs",
-        "dimension": 64.27556818181817,
+        "dimension": 50.92329545454546,
         "children": [
           {
             "id": "979e4dd7465a98c8",
@@ -162,6 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "DeepGo/Interface.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -176,7 +183,7 @@
       {
         "id": "6aba92e300478520",
         "type": "tabs",
-        "dimension": 35.72443181818182,
+        "dimension": 49.07670454545455,
         "children": [
           {
             "id": "3d4e86d3eeca8736",
@@ -184,6 +191,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "DeepGo/Interface.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,14 +240,15 @@
       "audio-recorder:Start/stop recording": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "terminal:Open terminal": true,
-      "lean-terminal:Open terminal": false,
       "termy:Open terminal": false
     }
   },
   "active": "9b57efd688f092d3",
   "lastOpenFiles": [
+    "DeepGo/Maps.md",
+    "DeepGo/Interface.md",
+    "DeepGo/Generics.md",
+    "DeepGo/Reflection.md",
     "Software Deisgn",
     "Me/Multilingual City Search Engine.md",
     "Insight/Photon paradox.excalidraw.md",
@@ -270,9 +279,6 @@
     "DeepGo/Context.md",
     "DeepGo/Channels.md",
     "DeepGo/Synchronization Primitives.md",
-    "DeepGo/Error Handling.md",
-    "DeepGo/Goroutines.md",
-    "DeepGo/Garbage Collector.md",
     "DeepGo/Pasted image 20260830010047.png",
     "DeepGo/Pasted image 20260802181054.png",
     "DeepGo/Maps.md.tmp.31584.1784368626112",
@@ -284,7 +290,6 @@
     "DeepGo/Structs.md.tmp.31584.1784368584026",
     "DeepGo/Structs.md.tmp.31584.1784368578318",
     "DeepGo/Structs.md.tmp.31584.1784368573682",
-    "DeepGo/Strings.md.tmp.31584.1784368568848",
     "DeepGo/Pasted image 20260607004146.png",
     "YouTube/Plan/Brainstorm.canvas"
   ]
