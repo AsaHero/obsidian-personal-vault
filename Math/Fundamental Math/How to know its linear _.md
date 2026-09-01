@@ -1,0 +1,1 @@
+A set of points represents solutions to a linear relationship if the slope between **any two points** is the same. When the slope doesn't change, we can connect the points with a single line.

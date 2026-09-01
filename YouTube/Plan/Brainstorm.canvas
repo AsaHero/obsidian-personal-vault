@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"28a20f58f42c3815","type":"text","text":"Video Ideas","x":-3225,"y":-1580,"width":250,"height":60,"color":"2"},
+		{"id":"e380a6dd8b75a775","type":"file","file":"YouTube/Plan/Ideas.md","x":-3300,"y":-1420,"width":400,"height":620},
+		{"id":"f1483e7dc60a0357","type":"file","file":"YouTube/Cache Service/HTTP Cache Service in C++.md","x":-2540,"y":-2180,"width":400,"height":400},
+		{"id":"8ec0423d2ead81cd","type":"file","file":"YouTube/Plan/Crow and fmt.md","x":-1920,"y":-1978,"width":600,"height":598},
+		{"id":"3f4b61e5edacfd48","type":"text","text":" Record fmt and Crow installation, and configure CMake ","x":-1840,"y":-2176,"width":440,"height":80},
+		{"id":"67fcc460ebf929d4","type":"text","text":"Config and Logger implementation","x":-1140,"y":-2180,"width":250,"height":84},
+		{"id":"2cf5235d8cab5080","type":"text","text":"HTTP Server implementation","x":-720,"y":-2182,"width":313,"height":86}
+	],
+	"edges":[
+		{"id":"4542486c5262d436","fromNode":"28a20f58f42c3815","fromSide":"bottom","toNode":"e380a6dd8b75a775","toSide":"top","color":"2"},
+		{"id":"29dd1d7bd234dec7","fromNode":"e380a6dd8b75a775","fromSide":"right","toNode":"f1483e7dc60a0357","toSide":"left","color":"4"},
+		{"id":"0c693863ad5137ce","fromNode":"f1483e7dc60a0357","fromSide":"right","toNode":"3f4b61e5edacfd48","toSide":"left"},
+		{"id":"ca0fd5c4be9090a5","fromNode":"3f4b61e5edacfd48","fromSide":"right","toNode":"67fcc460ebf929d4","toSide":"left"},
+		{"id":"5649cb01902081cd","fromNode":"67fcc460ebf929d4","fromSide":"right","toNode":"2cf5235d8cab5080","toSide":"left"},
+		{"id":"68ec3573a6bf72e4","fromNode":"3f4b61e5edacfd48","fromSide":"bottom","toNode":"8ec0423d2ead81cd","toSide":"top"}
+	]
+}

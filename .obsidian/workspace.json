@@ -1,0 +1,291 @@
+{
+  "main": {
+    "id": "4d1b193911cf2930",
+    "type": "split",
+    "children": [
+      {
+        "id": "72df1f209980311d",
+        "type": "split",
+        "children": [
+          {
+            "id": "2c9ad45fa4f3a888",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "bab87e779110e500",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
+              }
+            ]
+          },
+          {
+            "id": "12453817ef79befc",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "9b57efd688f092d3",
+                "type": "leaf",
+                "state": {
+                  "type": "terminal-view",
+                  "state": {},
+                  "icon": "terminal",
+                  "title": "Terminal"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "55ca9b905b54963f",
+    "type": "split",
+    "children": [
+      {
+        "id": "212f3b8888ea2de5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c130a70dbc78166",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cea47434b8018a5f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "coordinate plane",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0bb81741ddebc787",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 624.5
+  },
+  "right": {
+    "id": "98d76eeb831f47ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c97620ef49eba6f",
+        "type": "tabs",
+        "dimension": 64.27556818181817,
+        "children": [
+          {
+            "id": "979e4dd7465a98c8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ML/Model.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Model"
+            }
+          },
+          {
+            "id": "bcbfba71d50b64c8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ML/Model.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Model"
+            }
+          },
+          {
+            "id": "2d0264bd8664e447",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "18a0addb121b7b64",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "6aba92e300478520",
+        "type": "tabs",
+        "dimension": 35.72443181818182,
+        "children": [
+          {
+            "id": "3d4e86d3eeca8736",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.46822130772748016,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Local graph"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 435.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": true,
+      "lean-terminal:Open terminal": false,
+      "termy:Open terminal": false
+    }
+  },
+  "active": "9b57efd688f092d3",
+  "lastOpenFiles": [
+    "Software Deisgn",
+    "Me/Multilingual City Search Engine.md",
+    "Insight/Photon paradox.excalidraw.md",
+    "ML tasks/Vector Search.md",
+    "Excalidraw/Drawing 2026-04-07 00.29.38.excalidraw.md",
+    "Math/Data Analysis/Types of changes.md",
+    "Math/Data Analysis/Visualization.md",
+    "Media/Pasted image 20241125222235.png",
+    "Media/Pasted image 20241124012545.png",
+    "Media/Pasted image 20241124011353.png",
+    "Media/Pasted image 20241123232614.png",
+    "Media/Pasted image 20240924013758.png",
+    "Media/Pasted image 20240223022336.png",
+    "Media/Pasted image 20240222231625.png",
+    "ML/Supervised Learning.md",
+    "ML/Intro to ML.md",
+    "ML/References.md",
+    "Drawing 2025-04-26 23.32.03.excalidraw.md",
+    "YouTube/Plan/Crow and fmt.md",
+    "YouTube/Plan/Ideas.md",
+    "YouTube/Kafka/Kafka.md",
+    "YouTube/Kafka/kafka_3_6_2.excalidraw.md",
+    "Astronomy/Space Science (Astronomy).md",
+    "DeepGo/Iterators.md",
+    "Me/CV.md",
+    "DeepGo/Swiss Tables.md",
+    "DeepGo/Allocators.md",
+    "DeepGo/Context.md",
+    "DeepGo/Channels.md",
+    "DeepGo/Synchronization Primitives.md",
+    "DeepGo/Error Handling.md",
+    "DeepGo/Goroutines.md",
+    "DeepGo/Garbage Collector.md",
+    "DeepGo/Pasted image 20260830010047.png",
+    "DeepGo/Pasted image 20260802181054.png",
+    "DeepGo/Maps.md.tmp.31584.1784368626112",
+    "DeepGo/Structs.md.tmp.31584.1784368619139",
+    "DeepGo/Structs.md.tmp.31584.1784368612185",
+    "DeepGo/Structs.md.tmp.31584.1784368599958",
+    "DeepGo/Structs.md.tmp.31584.1784368595200",
+    "DeepGo/Structs.md.tmp.31584.1784368588840",
+    "DeepGo/Structs.md.tmp.31584.1784368584026",
+    "DeepGo/Structs.md.tmp.31584.1784368578318",
+    "DeepGo/Structs.md.tmp.31584.1784368573682",
+    "DeepGo/Strings.md.tmp.31584.1784368568848",
+    "DeepGo/Pasted image 20260607004146.png",
+    "YouTube/Plan/Brainstorm.canvas"
+  ]
+}
