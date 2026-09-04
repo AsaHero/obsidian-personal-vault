@@ -4,20 +4,62 @@
     "type": "split",
     "children": [
       {
-        "id": "12453817ef79befc",
-        "type": "tabs",
+        "id": "6b91f377c5b0f163",
+        "type": "split",
         "children": [
           {
-            "id": "9b57efd688f092d3",
-            "type": "leaf",
-            "state": {
-              "type": "terminal-view",
-              "state": {},
-              "icon": "terminal",
-              "title": "Terminal"
-            }
+            "id": "31c8a16f9a2a59f6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d68a276874826090",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Computer Science/Transistors.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Transistors"
+                }
+              },
+              {
+                "id": "f09bbf948a7f74b1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Computer Science/Transistors.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Transistors"
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "31e3e14ff84f11c1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "58ce4e5e4838a818",
+                "type": "leaf",
+                "state": {
+                  "type": "terminal-view",
+                  "state": {},
+                  "icon": "terminal",
+                  "title": "Terminal"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -76,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 624.5
+    "width": 334.640625
   },
   "right": {
     "id": "98d76eeb831f47ea",
@@ -93,6 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Concurrency in Go/Fundamental Knowledge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,12 +154,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ML/Model.md",
+                "file": "Concurrency in Go/Fundamental Knowledge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Model"
+              "title": "Outgoing links"
             }
           },
           {
@@ -138,6 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Computer Science/Transistors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -146,7 +190,8 @@
               "title": "Outline"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "6aba92e300478520",
@@ -159,6 +204,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Computer Science/Transistors.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -181,7 +227,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.46822130772748016,
+                  "scale": 3.682637180693865,
                   "close": true
                 }
               },
@@ -193,7 +239,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 435.5
+    "width": 426.5234375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,21 +256,38 @@
       "termy:Open terminal": false
     }
   },
-  "active": "9b57efd688f092d3",
+  "active": "58ce4e5e4838a818",
   "lastOpenFiles": [
+    "Media/sum_gate_3.gif",
+    "Media/sum_gate_1.gif",
+    "Media/sum_gate_0.gif",
+    "Computer Science/Pasted image 20260904181320.png",
+    "Media/Pasted image 20260904175539.png",
+    "Media/xor_gates.gif",
+    "Media/logic_gates.gif",
+    "Media/or_gate.gif",
+    "Media/and_gate.gif",
+    "Computer Science/Logical Gates.md",
+    "Computer Science/Transistors.md",
+    "Media/Pasted image 20240222231625.png",
+    "Media/not_gate.gif",
+    "Drawing 2026-09-03 15.15.59.excalidraw.md",
+    "Concurrency in Go/Fundamental Knowledge.md",
+    "Computer Science",
+    "DeepGo/Allocators.md",
+    "Software Deisgn/WhatsApp/WhatsApp_1.excalidraw.md",
+    "YouTube/Kafka/Untitled.md",
+    "Untitled.base",
+    "Software Deisgn/WhatsApp",
+    "Software Deisgn",
+    "Concurrency in Go",
     "DeepGo/Interface.md",
     "DeepGo/Generics.md",
-    "DeepGo/Allocators.md",
     "DeepGo/Array and Slices.md.tmp.13701.2f15e43c5dd2",
     "DeepGo/Allocators.md.tmp.13701.acec2d1b3e4b",
     "DeepGo/Allocators.md.tmp.13701.b80362967bf4",
     "DeepGo/Context.md.tmp.13701.18d607e678a8",
     "DeepGo/Context.md.tmp.13701.46e9c44a9248",
-    "DeepGo/Channels.md.tmp.13701.c81cc912f24a",
-    "DeepGo/Channels.md.tmp.13701.583cbcc78370",
-    "DeepGo/Channels.md.tmp.13701.756962e1442f",
-    "DeepGo/Goroutines.md.tmp.13701.848b7c50775d",
-    "DeepGo/Reflection.md.tmp.13701.7a8d2f6cf569",
     "DeepGo/Maps.md",
     "DeepGo/Reflection.md",
     "Me/Multilingual City Search Engine.md",
@@ -233,13 +296,6 @@
     "Excalidraw/Drawing 2026-04-07 00.29.38.excalidraw.md",
     "Math/Data Analysis/Types of changes.md",
     "Math/Data Analysis/Visualization.md",
-    "Media/Pasted image 20241125222235.png",
-    "Media/Pasted image 20241124012545.png",
-    "Media/Pasted image 20241124011353.png",
-    "Media/Pasted image 20241123232614.png",
-    "Media/Pasted image 20240924013758.png",
-    "Media/Pasted image 20240223022336.png",
-    "Media/Pasted image 20240222231625.png",
     "ML/Supervised Learning.md",
     "ML/Intro to ML.md",
     "ML/References.md",
@@ -248,15 +304,6 @@
     "YouTube/Plan/Ideas.md",
     "YouTube/Kafka/Kafka.md",
     "YouTube/Kafka/kafka_3_6_2.excalidraw.md",
-    "Astronomy/Space Science (Astronomy).md",
-    "DeepGo/Iterators.md",
-    "Me/CV.md",
-    "DeepGo/Swiss Tables.md",
-    "DeepGo/Context.md",
-    "DeepGo/Channels.md",
-    "DeepGo/Pasted image 20260830010047.png",
-    "DeepGo/Pasted image 20260802181054.png",
-    "DeepGo/Pasted image 20260607004146.png",
     "YouTube/Plan/Brainstorm.canvas"
   ]
 }

@@ -1,12 +1,24 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-09-02T06:36:02.160Z",
+  "updatedAt": "2026-09-04T17:26:38.022Z",
   "vaultRoot": "Users/asadbek.bakh/Documents/Personal",
   "workspaceFolders": [
     "Users/asadbek.bakh/Documents/Personal"
   ],
-  "activeFile": null,
-  "openFiles": [],
+  "activeFile": {
+    "filePath": "/Users/asadbek.bakh/Documents/Personal/Computer Science/Transistors.md",
+    "vaultPath": "Computer Science/Transistors.md",
+    "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/Computer%20Science/Transistors.md",
+    "hasFocus": false
+  },
+  "openFiles": [
+    {
+      "filePath": "/Users/asadbek.bakh/Documents/Personal/Computer Science/Transistors.md",
+      "vaultPath": "Computer Science/Transistors.md",
+      "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/Computer%20Science/Transistors.md",
+      "isActive": true
+    }
+  ],
   "selection": null
 }
