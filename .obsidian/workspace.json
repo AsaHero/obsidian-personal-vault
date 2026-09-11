@@ -4,45 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "1ab03166e5b148ab",
+        "id": "4c49d0235506db80",
         "type": "split",
         "children": [
           {
-            "id": "628c0a3fd2420b14",
+            "id": "7b3e62ec8f12c2e7",
             "type": "tabs",
             "children": [
               {
-                "id": "2e334f62f0b53097",
+                "id": "cbe60efa46a66d28",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Computer Science/Transistors.md",
-                    "mode": "source",
-                    "source": false
-                  },
+                  "type": "empty",
+                  "state": {},
                   "icon": "lucide-file",
-                  "title": "Transistors"
+                  "title": "New tab"
                 }
               }
             ]
           },
           {
-            "id": "b8ee1e2ee5b18d05",
+            "id": "3ac71f2454b6465b",
             "type": "tabs",
             "children": [
               {
-                "id": "086eb69864e5bf4e",
-                "type": "leaf",
-                "state": {
-                  "type": "terminal-view",
-                  "state": {},
-                  "icon": "terminal",
-                  "title": "Claude Code"
-                }
-              },
-              {
-                "id": "3a05a13a0a4b3af0",
+                "id": "2c6854b700ed8db6",
                 "type": "leaf",
                 "state": {
                   "type": "terminal-view",
@@ -51,8 +37,7 @@
                   "title": "Terminal"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal"
@@ -74,7 +59,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTime",
+                "sortOrder": "alphabetical",
                 "autoReveal": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -89,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "coordinate plane",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -177,7 +162,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Transistors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -200,7 +184,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Computer Science/Transistors.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -252,53 +235,53 @@
       "termy:Open terminal": false
     }
   },
-  "active": "3a05a13a0a4b3af0",
+  "active": "2c6854b700ed8db6",
   "lastOpenFiles": [
-    "Computer Science/Transistors.md",
-    "Media/Pasted image 20260905013406.png",
-    "Media/alu_decoder.gif",
-    "Computer Science/Pasted image 20260905012708.png",
-    "Media/Pasted image 20260905012437.png",
-    "Media/Pasted image 20260905012225.png",
-    "Media/Pasted image 20260905012022.png",
-    "Media/Pasted image 20260903144038.png",
-    "Media/Pasted image 20240223022336.png",
-    "Media/Pasted image 20240223200339.png",
-    "Media/Pasted image 20260904234916.png",
+    "Computer Science/7. Registers.md",
+    "Computer Science/15. Binary Counter.md",
+    "Media/Pasted image 20260911200350.png",
     "Concurrency in Go/Fundamental Knowledge.md",
+    "Media/cpu_stage_forwarder.gif",
+    "Media/binary_counter.gif",
+    "Media/binary_counter_pattern.gif",
+    "Media/jk_flip_flop_chain.gif",
+    "Media/jk_flip_flop_only_clock_change_1.gif",
+    "Media/jk_flip_flop_only_clock_change.gif",
+    "Computer Science/14. Flip-Flop.md",
+    "Media/jk_flip_flop_no_ambiguity.gif",
+    "Media/Pasted image 20260911202353.png",
+    "Media/ambiguous_gated_sr_latch.gif",
+    "Computer Science/13. Clock.md",
+    "Computer Science/12. DRAM.md",
+    "Computer Science/11. Instruction Cycle.md.tmp.11089.24e1a8b9df39",
+    "Computer Science/15. Binary Counter.md.tmp.11089.1099b926fa33",
+    "Computer Science/14. Flip-Flop.md.tmp.11089.7a8cb2dc7af7",
+    "Computer Science/13. Clock.md.tmp.11089.627e1ffabf95",
+    "Media/Media/Pasted image 20260911181604.png.md",
+    "Media/Media",
+    "Computer Science/11. Instruction Cycle.md",
+    "Computer Science/1. Transistors.md",
+    "Computer Science/8. RAM.md.tmp.6997.757c3e46461a",
+    "Computer Science/12. DRAM.md.tmp.6997.8ebb004e8eab",
+    "Computer Science/10. Control Unit.md",
+    "Computer Science/9. CPU.md",
+    "Computer Science/8. RAM.md.tmp.26099.e8202f037c00",
+    "Computer Science/11. Instruction Cycle.md.tmp.26099.a5331036d2b1",
+    "Computer Science/10. Control Unit.md.tmp.26099.666391ddcf39",
+    "Computer Science/8. RAM.md",
+    "Computer Science/6. Memory.md",
+    "Computer Science/5. ALU.md",
+    "Computer Science/4. Binary Decoder.md",
+    "Computer Science/3. Adders.md",
+    "Computer Science/2. Logic Gates.md",
     "Drawing 2026-09-03 15.15.59.excalidraw.md",
-    "Computer Science",
     "Software Deisgn/WhatsApp/WhatsApp_1.excalidraw.md",
-    "Concurrency in Go",
-    "DeepGo/Homework",
     "DeepGo/Generics.md",
     "Excalidraw/Drawing 2026-09-01 22.01.52.excalidraw.md",
     "Software Deisgn/Untitled.md",
-    "Excalidraw",
-    "Software Deisgn/WhatsApp",
     "DeepGo/Interface.md",
     "DeepGo/Allocators.md",
-    "DeepGo/Array and Slices.md.tmp.13701.2f15e43c5dd2",
-    "DeepGo/Allocators.md.tmp.13701.acec2d1b3e4b",
-    "DeepGo/Allocators.md.tmp.13701.b80362967bf4",
-    "DeepGo/Context.md.tmp.13701.18d607e678a8",
-    "DeepGo/Context.md.tmp.13701.46e9c44a9248",
     "DeepGo/Maps.md",
-    "DeepGo/Reflection.md",
-    "Me/Multilingual City Search Engine.md",
-    "Insight/Photon paradox.excalidraw.md",
-    "ML tasks/Vector Search.md",
-    "Excalidraw/Drawing 2026-04-07 00.29.38.excalidraw.md",
-    "Math/Data Analysis/Types of changes.md",
-    "Math/Data Analysis/Visualization.md",
-    "ML/Supervised Learning.md",
-    "ML/Intro to ML.md",
-    "ML/References.md",
-    "Drawing 2025-04-26 23.32.03.excalidraw.md",
-    "YouTube/Plan/Crow and fmt.md",
-    "YouTube/Plan/Ideas.md",
-    "YouTube/Kafka/Kafka.md",
-    "YouTube/Kafka/kafka_3_6_2.excalidraw.md",
     "YouTube/Plan/Brainstorm.canvas"
   ]
 }
