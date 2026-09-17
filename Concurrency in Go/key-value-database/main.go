@@ -2,40 +2,48 @@ package main
 
 import (
 	"bufio"
+	"context"
 	"fmt"
 	"key-value-database/compute"
 	"key-value-database/storage"
+	"key-value-database/storage/engine/in_memory"
+	"log"
 	"log/slog"
 	"os"
+	"time"
 )
 
 func main() {
+	// 1. Configure the Handler Options (Set minimum log level to Debug)
+	opts := &slog.HandlerOptions{
+		Level: slog.LevelDebug, // Default is slog.LevelInfo
+	}
+
+	// 2. Initialize a JSON Handler and set it as the global default logger
+	handler := slog.NewJSONHandler(os.Stdout, opts)
+	logger := slog.New(handler)
+
+	computeLayer := compute.NewParser(logger)
+	inmemoryEngine := in_memory.NewEngine(logger)
+	storageLayer, err := storage.NewStorage(inmemoryEngine, logger)
+	if err != nil {
+		log.Fatalf("failed to init storage layer: %s", err.Error())
+	}
+	database, err := NewDatabase(computeLayer, storageLayer, logger)
+	if err != nil {
+		log.Fatalf("failed to init database layer: %s", err.Error())
+	}
+
 	stdin := bufio.NewScanner(os.Stdin)
-	db := storage.NewNegine()
-
 	for stdin.Scan() {
-		line := stdin.Text()
-		query, err := compute.NewParser(line).Parse()
-		if err != nil {
-			slog.Error("failed to parse query", "error", err)
-			continue
-		}
+		request := stdin.Text()
 
-		switch query.Cmd {
-		case compute.GET:
-			val, err := db.Get(query.Key)
-			if err != nil {
-				slog.Error("failed to get", "error", err)
-				continue
-			}
+		ctx, cancel := context.WithTimeout(context.Background(), time.Second*1)
+		fmt.Println(database.HandleQuery(ctx, request))
+		cancel()
+	}
 
-			fmt.Println(val)
-		case compute.SET:
-			db.Set(query.Key, query.Value)
-			fmt.Println("set successfully")
-		case compute.DEL:
-			db.Del(query.Key)
-			fmt.Println("deleted successfully")
-		}
+	if err := stdin.Err(); err != nil {
+		log.Fatalf("Error reading standard input: %v", err)
 	}
 }

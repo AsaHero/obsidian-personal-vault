@@ -1,95 +1,63 @@
 package compute
 
 import (
+	"context"
 	"errors"
-	"regexp"
+	"log/slog"
 	"strings"
 )
 
 var (
-	ErrInvalidQuery    = errors.New("invalid query")
-	ErrInvalidCommand  = errors.New("invalid command")
-	ErrInvalidArgument = errors.New("invalid arguments")
+	ErrInvalidQuery           = errors.New("invalid query format")
+	ErrInvalidCommand         = errors.New("invalid command name")
+	ErrInvalidNumberArguments = errors.New("invalid number of arguments")
 )
-
-var (
-	argumentRegex = regexp.MustCompile(`\w+`)
-)
-
-type Command uint8
-
-const (
-	GET Command = iota
-	SET
-	DEL
-)
-
-type Query struct {
-	Value string
-	Key   string
-	Cmd   Command
-}
-
-type Parser interface {
-	Parse() (*Query, error)
-}
 
 type parser struct {
-	exp string
+	logger *slog.Logger
 }
 
-func NewParser(exp string) Parser {
+func NewParser(logger *slog.Logger) *parser {
 	return &parser{
-		exp: exp,
+		logger: logger,
 	}
 }
 
-func (e *parser) Parse() (*Query, error) {
-	splits := strings.Split(e.exp, " ")
+func (e *parser) Parse(ctx context.Context, raw string) (Query, error) {
+	tokens := strings.Fields(raw)
 
-	if len(splits) < 1 {
-		return nil, ErrInvalidQuery
+	if len(tokens) < 1 {
+		return Query{}, ErrInvalidQuery
 	}
 
 	q := Query{}
+	cmd := tokens[0]
 
-	switch splits[0] {
-	case "GET":
-		q.Cmd = GET
-		q.Key = splits[1]
-
-		if !argumentRegex.MatchString(q.Key) {
-			return nil, ErrInvalidArgument
+	switch cmd {
+	case getCommand:
+		if len(tokens) < 2 {
+			return Query{}, ErrInvalidNumberArguments
 		}
 
-		return &q, nil
-	case "SET":
-		q.Cmd = SET
-		if len(splits) < 3 {
-			return nil, ErrInvalidQuery
+		q.command = GET
+		q.arguments = tokens[1:]
+	case setCommand:
+		if len(tokens) < 3 {
+			return Query{}, ErrInvalidNumberArguments
 		}
 
-		q.Key = splits[1]
-		if !argumentRegex.MatchString(q.Key) {
-			return nil, ErrInvalidArgument
+		q.command = SET
+		q.arguments = tokens[1:]
+	case delCommand:
+		if len(tokens) < 2 {
+			return Query{}, ErrInvalidNumberArguments
 		}
 
-		q.Value = strings.Join(splits[2:], " ")
-		if !argumentRegex.MatchString(q.Value) {
-			return nil, ErrInvalidArgument
-		}
-
-		return &q, nil
-	case "DEL":
-		q.Cmd = DEL
-		q.Key = splits[1]
-
-		if !argumentRegex.MatchString(q.Key) {
-			return nil, ErrInvalidArgument
-		}
-
-		return &q, nil
+		q.command = DEL
+		q.arguments = tokens[1:]
 	default:
-		return nil, ErrInvalidCommand
+		return Query{}, ErrInvalidCommand
 	}
+
+	return q, nil
 }

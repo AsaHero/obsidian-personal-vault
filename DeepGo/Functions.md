@@ -639,4 +639,4 @@ func infinite() {
 }
 ```
 
-При stack overflow Go выведет `runtime: goroutine stack exceeds 1000000000-byte limit` и упадёт со всей программой — это **не** [[Error Handling#Go не поддерживает исключения (но почти)|паника]], от которой можно оправиться через `recover`. Стек горутины при этом растущий и переезжает в памяти по мере надобности — подробнее в [[Allocators#Стек реально "переезжает" при росте|Allocators]] и в [[Goroutines|Goroutines]].
+При stack overflow Go выведет `runtime: goroutine stack exceeds 1000000000-byte limit` и упадёт со всей программой — это **не** [[Error Handling#Go не поддерживает исключения (но почти)|паника]], от которой можно оправиться через `recover`. Стек горутины при этом растущий и переезжает в памяти по мере надобности — подробнее в [[Allocators#Стек реально "переезжает" при росте|Allocators]] и в [[DeepGo/Goroutines|Goroutines]].
