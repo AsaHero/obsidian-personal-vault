@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "61cadc3620252265",
+        "id": "262a2efadae40dbc",
         "type": "split",
         "children": [
           {
@@ -28,11 +28,11 @@
             ]
           },
           {
-            "id": "db265c14ab8227a5",
+            "id": "f62d93ff7351ef86",
             "type": "tabs",
             "children": [
               {
-                "id": "90a23908212bf43a",
+                "id": "27b02f3dd25f3ea7",
                 "type": "leaf",
                 "state": {
                   "type": "terminal-view",
@@ -242,12 +242,23 @@
       "termy:Open terminal": false
     }
   },
-  "active": "90a23908212bf43a",
+  "active": "27b02f3dd25f3ea7",
   "lastOpenFiles": [
+    "Computer Architecture/1. Transistors.md",
+    "Computer Architecture/8. RAM.md",
+    "Computer Architecture/7. Registers.md",
+    "Computer Architecture/6. Memory.md",
+    "Computer Architecture/9. CPU.md",
+    "Computer Architecture/3. Adders.md",
+    "Computer Architecture/2. Logic Gates.md",
+    "00 Учёба/A — Тяжёлый/CSAPP.md",
+    "CSAPP/CSAPP_2016.pdf",
+    "00 Учёба/Рельсы.md",
+    "00 Учёба/Спринты/2026-W38.md",
+    "00 Учёба/C — Лёгкий/Concurrency in Go.md",
     "DeepGo/Goroutines.md",
     "00 Учёба/C — Лёгкий/How Linux Works.md",
     "00 Учёба/B — Ровный/Дискретка.md",
-    "00 Учёба/C — Лёгкий/Concurrency in Go.md",
     "Concurrency in Go/key-value-database/compute/parser_test.go",
     "Concurrency in Go/key-value-database/go.sum",
     "Concurrency in Go/key-value-database/storage/engine_test.go",
@@ -264,7 +275,6 @@
     "Operating System/2. Virtual Memory.md",
     "Operating System/1. Process.md",
     "Operating System/7. Coroutines.md.tmp.37733.39537ff6eda3",
-    "Operating System/6. Context Switching.md.tmp.37733.ff6a48506817",
     "Media/Pasted image 20260912183302.png",
     "Media/Pasted image 20260912183228.png",
     "Media/Pasted image 20260912182713.png",
@@ -276,20 +286,10 @@
     "Media/Pasted image 20260912034942.png",
     "Media/Pasted image 20260912034833.png",
     "Operating System/Process.md",
-    "00 Учёба/A — Тяжёлый/CSAPP.md",
-    "00 Учёба/Рельсы.md",
     "00 Учёба/Парковка.md",
-    "00 Учёба/Спринты/2026-W38.md",
     "00 Учёба/Шаблоны/Шаблон — Курс.md",
     "Plan to Become the Best.md",
     "00 Учёба/Шаблоны/Шаблон — Спринт.md",
-    "Drawing 2026-09-03 15.15.59.excalidraw.md",
-    "Computer Architecture/23. False Sharing.md",
-    "Computer Architecture/22. Cache Coherence.md",
-    "Computer Architecture/21. Cache Lines.md",
-    "Computer Architecture/20. Cache Hierarchy.md",
-    "Computer Architecture/19. SIMD.md",
-    "Computer Science/Cache coherence.md",
     "YouTube/Plan/Brainstorm.canvas"
   ]
 }
