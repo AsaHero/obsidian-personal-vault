@@ -4,35 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "39499e8d1e1ca1ef",
+        "id": "262a2efadae40dbc",
         "type": "split",
         "children": [
           {
-            "id": "3c20e7766d376696",
+            "id": "1e0ce129cb36fdbd",
             "type": "tabs",
             "children": [
               {
-                "id": "5c8dc3e1f3bdd1e7",
+                "id": "c0f556876f3872d1",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Concurrency in Go/7. Once.md",
+                    "file": "Concurrency in Go/8. Once.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "7. Once"
+                  "title": "8. Once"
                 }
               }
             ]
           },
           {
-            "id": "75424c22c41cd0d0",
+            "id": "f62d93ff7351ef86",
             "type": "tabs",
             "children": [
               {
-                "id": "84f4d9767cd8b120",
+                "id": "27b02f3dd25f3ea7",
+                "type": "leaf",
+                "state": {
+                  "type": "terminal-view",
+                  "state": {},
+                  "icon": "terminal",
+                  "title": "Claude Code"
+                }
+              },
+              {
+                "id": "d81b87e9d354cef3",
                 "type": "leaf",
                 "state": {
                   "type": "terminal-view",
@@ -41,7 +51,8 @@
                   "title": "Terminal"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal"
@@ -103,7 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.640625
+    "width": 347.5
   },
   "right": {
     "id": "98d76eeb831f47ea",
@@ -139,12 +150,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Concurrency in Go/Fundamental Knowledge.md",
+                "file": "ML/Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Model"
             }
           },
           {
@@ -166,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Concurrency in Go/7. Once.md",
+                "file": "Operating System/7. Coroutines.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -189,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Concurrency in Go/7. Once.md",
+                "file": "Operating System/7. Coroutines.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -212,7 +223,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7052315418073601,
+                  "scale": 0.46822130772748016,
                   "close": true
                 }
               },
@@ -224,7 +235,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 453.2578125
+    "width": 463.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,54 +253,53 @@
       "termy:Open terminal": false
     }
   },
-  "active": "84f4d9767cd8b120",
+  "active": "d81b87e9d354cef3",
   "lastOpenFiles": [
-    "Concurrency in Go/6. Priority Inversion.md",
-    "Concurrency in Go/7. Once.md",
-    "Media/Pasted image 20260917171701.png",
-    "Concurrency in Go/5. WaitGroup.md",
-    "Media/Pasted image 20260916184910.png",
-    "Media/Pasted image 20260916185237.png",
-    "Media/Pasted image 20260916185024.png",
-    "Media/Pasted image 20260916184230.png",
-    "Concurrency in Go/Mutex.md",
+    "Concurrency in Go/7. Priority Inversion.md",
+    "Concurrency in Go/6. Starvation Mode.md",
+    "Concurrency in Go/5. Wait Queue.md",
     "Concurrency in Go/4. Mutex.md",
-    "DeepGo/Synchronization Primitives.md",
     "Concurrency in Go/3. WaitGroup.md",
     "Concurrency in Go/2. Scheduler.md",
-    "DeepGo/Goroutines.md",
     "Concurrency in Go/1. Goroutines.md",
-    "Plan to Become the Best.md",
-    "Untitled 1.base",
-    "Untitled.base",
-    "DeepGo/Context.md",
-    "Concurrency in Go/key-value-database/storage/engine/in_memory/hash_table.go",
-    "Concurrency in Go/key-value-database/storage/engine/in_memory/engine.go",
-    "Concurrency in Go/key-value-database/storage/engine/in_memory",
-    "Concurrency in Go/key-value-database/storage/engine/in-memory/hash_table.go",
-    "Concurrency in Go/key-value-database/storage/engine/in-memory/engine.go",
-    "Concurrency in Go/key-value-database/storage/engine/in-memory",
-    "Concurrency in Go/key-value-database/storage/storage.go",
-    "Concurrency in Go/key-value-database/storage/engine/engine.go",
-    "Software Deisgn/WhatsApp/WhatsApp_1.excalidraw.md",
-    "Math/Data Analysis/Types of changes.md",
-    "Math/Data Analysis/Visualization.md",
-    "Math/Fundamental Math/Minimums and Maximums.md",
-    "Math/Fundamental Math/Intercepts.md",
-    "Math/Fundamental Math/Graph Gallery.md",
-    "Me/Multilingual City Search Engine.md",
-    "Me/CV.md",
-    "Media/and_gate.gif",
-    "ML/K-Nearest Neighbors.md",
-    "ML/Reinforcement Learning.md",
-    "YouTube/Kafka/kafka_3_6_2.excalidraw.md",
-    "YouTube/Kafka/Kafka.md",
-    "DeepGo/Allocators.md",
-    "DeepGo/Array and Slices.md",
-    "Media/sizes_registers.gif",
-    "Media/rising-edge-detector.gif",
-    "Media/registers.gif",
-    "Media/ram.gif",
+    "00 Учёба/C — Лёгкий/Concurrency in Go.md",
+    "Concurrency in Go/8. Once.md.tmp.13173.c3fa6a57a2ea",
+    "Concurrency in Go/7. Priority Inversion.md.tmp.13173.42c426884789",
+    "Concurrency in Go/6. Starvation Mode.md.tmp.13173.b7d191797668",
+    "Concurrency in Go/5. Wait Queue.md.tmp.13173.32d0fe09bd74",
+    "Concurrency in Go/8. Once.md",
+    "Media/Pasted image 20260917171701.png",
+    "Media/Pasted image 20260916185237.png",
+    "Media/Pasted image 20260916185024.png",
+    "Media/Pasted image 20260916184910.png",
+    "Media/Pasted image 20260916184230.png",
+    "Concurrency in Go/key-value-database/database.go",
+    "Concurrency in Go/key-value-database/compute/query.go",
+    "Concurrency in Go/key-value-database/compute/command.go",
+    "Concurrency in Go/7. Once.md",
+    "Concurrency in Go/6. Priority Inversion.md",
+    "Concurrency in Go/5. WaitGroup.md",
+    "Computer Architecture/1. Transistors.md",
+    "Computer Architecture/8. RAM.md",
+    "Computer Architecture/7. Registers.md",
+    "Computer Architecture/6. Memory.md",
+    "Computer Architecture/9. CPU.md",
+    "Computer Architecture/3. Adders.md",
+    "Computer Architecture/2. Logic Gates.md",
+    "00 Учёба/A — Тяжёлый/CSAPP.md",
+    "CSAPP/CSAPP_2016.pdf",
+    "00 Учёба/Рельсы.md",
+    "00 Учёба/Спринты/2026-W38.md",
+    "DeepGo/Goroutines.md",
+    "00 Учёба/C — Лёгкий/How Linux Works.md",
+    "00 Учёба/B — Ровный/Дискретка.md",
+    "Concurrency in Go/key-value-database/compute/parser_test.go",
+    "Concurrency in Go/key-value-database/go.sum",
+    "Media/Pasted image 20260912183302.png",
+    "Media/Pasted image 20260912183228.png",
+    "Media/Pasted image 20260912182713.png",
+    "Media/Pasted image 20260912181726.png",
+    "Media/Pasted image 20260912181626.png",
     "YouTube/Plan/Brainstorm.canvas"
   ]
 }
