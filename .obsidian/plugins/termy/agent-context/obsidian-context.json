@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-09-04T17:26:38.022Z",
+  "updatedAt": "2026-09-17T17:31:12.906Z",
   "vaultRoot": "Users/asadbek.bakh/Documents/Personal",
   "workspaceFolders": [
     "Users/asadbek.bakh/Documents/Personal"
   ],
   "activeFile": {
-    "filePath": "/Users/asadbek.bakh/Documents/Personal/Computer Science/Transistors.md",
-    "vaultPath": "Computer Science/Transistors.md",
-    "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/Computer%20Science/Transistors.md",
+    "filePath": "/Users/asadbek.bakh/Documents/Personal/Concurrency in Go/7. Once.md",
+    "vaultPath": "Concurrency in Go/7. Once.md",
+    "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/Concurrency%20in%20Go/7.%20Once.md",
     "hasFocus": false
   },
   "openFiles": [
     {
-      "filePath": "/Users/asadbek.bakh/Documents/Personal/Computer Science/Transistors.md",
-      "vaultPath": "Computer Science/Transistors.md",
-      "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/Computer%20Science/Transistors.md",
+      "filePath": "/Users/asadbek.bakh/Documents/Personal/Concurrency in Go/7. Once.md",
+      "vaultPath": "Concurrency in Go/7. Once.md",
+      "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/Concurrency%20in%20Go/7.%20Once.md",
       "isActive": true
     }
   ],
