@@ -1,11 +1,12 @@
-package main
+package database
 
 import (
 	"context"
 	"errors"
 	"fmt"
-	"key-value-database/compute"
-	"key-value-database/storage"
+	"key-value-database/database/compute"
+	"key-value-database/database/storage"
+
 	"log/slog"
 )
 

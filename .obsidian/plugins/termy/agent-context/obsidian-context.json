@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-09-17T17:31:12.906Z",
+  "updatedAt": "2026-09-19T09:52:22.511Z",
   "vaultRoot": "Users/asadbek.bakh/Documents/Personal",
   "workspaceFolders": [
     "Users/asadbek.bakh/Documents/Personal"
   ],
   "activeFile": {
-    "filePath": "/Users/asadbek.bakh/Documents/Personal/Concurrency in Go/7. Once.md",
-    "vaultPath": "Concurrency in Go/7. Once.md",
-    "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/Concurrency%20in%20Go/7.%20Once.md",
+    "filePath": "/Users/asadbek.bakh/Documents/Personal/DeepGo/Synchronization Primitives.md",
+    "vaultPath": "DeepGo/Synchronization Primitives.md",
+    "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/DeepGo/Synchronization%20Primitives.md",
     "hasFocus": false
   },
   "openFiles": [
     {
-      "filePath": "/Users/asadbek.bakh/Documents/Personal/Concurrency in Go/7. Once.md",
-      "vaultPath": "Concurrency in Go/7. Once.md",
-      "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/Concurrency%20in%20Go/7.%20Once.md",
+      "filePath": "/Users/asadbek.bakh/Documents/Personal/DeepGo/Synchronization Primitives.md",
+      "vaultPath": "DeepGo/Synchronization Primitives.md",
+      "fileUrl": "file:///Users/asadbek.bakh/Documents/Personal/DeepGo/Synchronization%20Primitives.md",
       "isActive": true
     }
   ],
