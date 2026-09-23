@@ -2,15 +2,15 @@ package in_memory
 
 import (
 	"context"
-	"log/slog"
+	"key-value-database/logger"
 )
 
 type Engine struct {
 	table  *HashTable
-	logger *slog.Logger
+	logger *logger.Logger
 }
 
-func NewEngine(logger *slog.Logger) *Engine {
+func NewEngine(logger *logger.Logger) *Engine {
 	return &Engine{
 		logger: logger,
 		table:  NewHashTable(),

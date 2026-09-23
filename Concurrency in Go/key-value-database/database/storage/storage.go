@@ -3,7 +3,7 @@ package storage
 import (
 	"context"
 	"errors"
-	"log/slog"
+	"key-value-database/logger"
 )
 
 var (
@@ -18,10 +18,10 @@ type Engine interface {
 
 type Storage struct {
 	engine Engine
-	logger *slog.Logger
+	logger *logger.Logger
 }
 
-func NewStorage(engine Engine, logger *slog.Logger) (*Storage, error) {
+func NewStorage(engine Engine, logger *logger.Logger) (*Storage, error) {
 	if engine == nil {
 		return nil, errors.New("engine is not provided")
 	}

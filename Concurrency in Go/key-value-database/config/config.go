@@ -54,13 +54,15 @@ func DefaultConfig() *Config {
 func New(path string) (*Config, error) {
 	cfg := DefaultConfig()
 
-	file, err := os.Open(path)
-	if err != nil {
-		return nil, fmt.Errorf("failed to open config yaml: %w", err)
-	}
+	if path != "" {
+		file, err := os.Open(path)
+		if err != nil {
+			return nil, fmt.Errorf("failed to open config yaml: %w", err)
+		}
 
-	if err := yaml.NewDecoder(file).Decode(cfg); err != nil {
-		return nil, fmt.Errorf("failed to parse config yaml: %w", err)
+		if err := yaml.NewDecoder(file).Decode(cfg); err != nil {
+			return nil, fmt.Errorf("failed to parse config yaml: %w", err)
+		}
 	}
 
 	return cfg, nil

@@ -3,7 +3,7 @@ package compute
 import (
 	"context"
 	"errors"
-	"log/slog"
+	"key-value-database/logger"
 	"strings"
 )
 
@@ -14,10 +14,10 @@ var (
 )
 
 type parser struct {
-	logger *slog.Logger
+	logger *logger.Logger
 }
 
-func NewParser(logger *slog.Logger) *parser {
+func NewParser(logger *logger.Logger) *parser {
 	return &parser{
 		logger: logger,
 	}

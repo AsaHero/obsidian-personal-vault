@@ -1,0 +1,36 @@
+time=2026-09-19T18:35:38.450+05:00 level=ERROR msg="failed to accept connection" error="accept tcp [::]:8080: use of closed network connection"
+time=2026-09-19T18:36:23.956+05:00 level=ERROR msg="failed to accept connection" error="accept tcp [::]:8080: use of closed network connection"
+time=2026-09-19T19:12:07.105+05:00 level=INFO msg="Starting server on address" address=127.0.0.1:3223
+time=2026-09-19T19:30:54.770+05:00 level=ERROR msg="failed to accept connection" error="accept tcp 127.0.0.1:3223: use of closed network connection"
+time=2026-09-19T19:33:04.234+05:00 level=INFO msg="Starting server on address" address=127.0.0.1:3223
+time=2026-09-19T19:34:17.025+05:00 level=ERROR msg="failed to accept connection" error="accept tcp 127.0.0.1:3223: use of closed network connection"
+time=2026-09-19T19:34:41.921+05:00 level=INFO msg="Starting server on address" address=127.0.0.1:3223
+time=2026-09-19T19:35:17.003+05:00 level=INFO msg="client disconnected or error" error=EOF
+time=2026-09-19T19:56:18.342+05:00 level=INFO msg="Starting server on address" address=127.0.0.1:3223
+time=2026-09-19T19:56:42.200+05:00 level=ERROR msg="failed to accept connection" error="accept tcp 127.0.0.1:3223: use of closed network connection"
+time=2026-09-19T19:57:05.825+05:00 level=INFO msg="Starting server on address" address=127.0.0.1:3223
+time=2026-09-19T19:57:09.760+05:00 level=INFO msg="Starting server on address" address=127.0.0.1:3223
+time=2026-09-19T19:57:09.760+05:00 level=ERROR msg="failed to start tcp server" error="failed to listen tcp: listen tcp 127.0.0.1:3223: bind: address already in use"
+time=2026-09-19T19:57:15.262+05:00 level=ERROR msg="failed to accept connection" error="accept tcp 127.0.0.1:3223: use of closed network connection"
+time=2026-09-19T19:57:19.005+05:00 level=INFO msg="Starting server on address" address=127.0.0.1:3223
+time=2026-09-19T19:57:36.338+05:00 level=DEBUG msg="handling query..." query="SET asad 24\n"
+time=2026-09-19T19:57:36.338+05:00 level=DEBUG msg="successfully set"
+time=2026-09-19T19:57:47.068+05:00 level=DEBUG msg="handling query..." query="SET madina 23\n"
+time=2026-09-19T19:57:47.068+05:00 level=DEBUG msg="successfully set"
+time=2026-09-19T19:58:03.152+05:00 level=DEBUG msg="handling query..." query="SET naza 17\n"
+time=2026-09-19T19:58:03.153+05:00 level=DEBUG msg="successfully set"
+time=2026-09-19T19:59:01.205+05:00 level=DEBUG msg="handling query..." query="SET fullname:asad Asadbek Bakhtiyarov\n"
+time=2026-09-19T19:59:01.205+05:00 level=DEBUG msg="successfully set"
+time=2026-09-19T19:59:06.343+05:00 level=DEBUG msg="handling query..." query="GET madina\n"
+time=2026-09-19T19:59:21.914+05:00 level=DEBUG msg="handling query..." query="GET naza\n"
+time=2026-09-19T19:59:33.720+05:00 level=DEBUG msg="handling query..." query="GET fullname:asad\n"
+time=2026-09-19T19:59:43.325+05:00 level=INFO msg="client disconnected or error" error=EOF
+time=2026-09-19T20:01:15.213+05:00 level=ERROR msg="failed to accept connection" error="accept tcp 127.0.0.1:3223: use of closed network connection"
+time=2026-09-19T20:09:32.745+05:00 level=INFO msg="Starting server on address" address=127.0.0.1:3223
+time=2026-09-19T20:19:47.319+05:00 level=DEBUG msg="handling query..." query="SET age:asad 24\n"
+time=2026-09-19T20:19:47.319+05:00 level=DEBUG msg="successfully set"
+time=2026-09-19T20:19:59.728+05:00 level=DEBUG msg="handling query..." query="GET age:asad\n"
+time=2026-09-19T20:20:21.637+05:00 level=DEBUG msg="handling query..." query="DEL age:asad\n"
+time=2026-09-19T20:20:27.139+05:00 level=DEBUG msg="handling query..." query="GET age:asad\n"
+time=2026-09-19T23:56:15.695+05:00 level=INFO msg="client disconnected or error" error=EOF
+time=2026-09-19T23:56:16.978+05:00 level=ERROR msg="failed to accept connection" error="accept tcp 127.0.0.1:3223: use of closed network connection"

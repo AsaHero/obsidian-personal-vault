@@ -4,22 +4,23 @@ import (
 	"bufio"
 	"context"
 	"errors"
+	"fmt"
 	"key-value-database/config"
 	"key-value-database/database"
-	"log"
-	"log/slog"
+	"key-value-database/logger"
 	"net"
 	"sync"
 )
 
 type Server struct {
 	cfg      *config.Config
-	logger   *slog.Logger
+	logger   *logger.Logger
 	database *database.Database
 	listener net.Listener
+	wg       sync.WaitGroup
 }
 
-func New(cfg *config.Config, logger *slog.Logger, database *database.Database) (*Server, error) {
+func New(cfg *config.Config, logger *logger.Logger, database *database.Database) (*Server, error) {
 	if cfg == nil {
 		return nil, errors.New("config is required")
 	}
@@ -39,39 +40,73 @@ func New(cfg *config.Config, logger *slog.Logger, database *database.Database) (
 	}, nil
 }
 
-func (s *Server) Start(ctx context.Context) {
-	listener, err := net.Listen("tcp", ":8080")
+func (s *Server) Start(ctx context.Context) (err error) {
+	s.listener, err = net.Listen("tcp", s.cfg.Network.Address)
 	if err != nil {
-		log.Fatalf("error on Listen: %v", err.Error())
+		return fmt.Errorf("failed to listen tcp: %w", err)
 	}
-	s.listener = listener
 
-	wg := sync.WaitGroup{}
 	semaphore := make(chan struct{}, s.cfg.Network.MaxConnections)
 	for {
-		select 
+		select {
+		case <-ctx.Done():
+			return
+		default:
+		}
 
-		conn, err := listener.Accept()
+		conn, err := s.listener.Accept()
 		if err != nil {
+			if err == net.ErrClosed {
+				return nil
+			}
 			s.logger.ErrorContext(ctx, "failed to accept connection", "error", err)
 			continue
 		}
 
 		semaphore <- struct{}{}
-		wg.Add(1)
-		go func() {
-			defer wg.Done()
+		s.wg.Add(1)
+		go func(conn net.Conn) {
+			defer s.wg.Done()
 			defer func() { <-semaphore }()
+			defer func() {
+				if err := recover(); err != nil {
+					s.logger.ErrorContext(ctx, "panic recovered", "error", err)
+				}
+			}()
 			s.handle(ctx, conn)
-		}()
+		}(conn)
 	}
 }
 
-func (s *Server) Stop() {
+func (s *Server) Stop(ctx context.Context) error {
+	_ = s.listener.Close()
+
+	done := make(chan struct{})
+	go func() {
+		s.wg.Wait()
+		close(done)
+	}()
+
+	select {
+	case <-done:
+		return nil
+	default:
+	}
+
+	select {
+	case <-ctx.Done():
+		return ctx.Err()
+	case <-done:
+		return nil
+	}
+
 }
 
 func (s *Server) handle(ctx context.Context, conn net.Conn) {
 	defer conn.Close()
+
+	ctx, cancel := context.WithCancel(ctx)
+	defer cancel()
 
 	reader := bufio.NewReader(conn)
 	for {
@@ -89,7 +124,7 @@ func (s *Server) handle(ctx context.Context, conn net.Conn) {
 
 		response := s.database.HandleQuery(ctx, request)
 
-		_, err = conn.Write([]byte(response))
+		_, err = conn.Write([]byte(response + "\n"))
 		if err != nil {
 			s.logger.ErrorContext(ctx, "failed to write to socket", "error", err)
 		}

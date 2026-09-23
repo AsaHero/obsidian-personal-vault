@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"key-value-database/database/compute"
 	"key-value-database/database/storage"
-
-	"log/slog"
+	"key-value-database/logger"
+	"strings"
 )
 
 type computeLayer interface {
@@ -23,10 +23,10 @@ type storageLayer interface {
 type Database struct {
 	computeLayer computeLayer
 	storageLayer storageLayer
-	logger       *slog.Logger
+	logger       *logger.Logger
 }
 
-func NewDatabase(computeLayer computeLayer, storageLayer storageLayer, logger *slog.Logger) (*Database, error) {
+func NewDatabase(computeLayer computeLayer, storageLayer storageLayer, logger *logger.Logger) (*Database, error) {
 	if computeLayer == nil {
 		return nil, errors.New("compute layer not provided")
 	}
@@ -85,7 +85,7 @@ func (d *Database) handleGetQuery(ctx context.Context, query compute.Query) stri
 
 func (d *Database) handleSetQuery(ctx context.Context, query compute.Query) string {
 	arguments := query.Arguments()
-	if err := d.storageLayer.Set(ctx, arguments[0], arguments[1]); err != nil {
+	if err := d.storageLayer.Set(ctx, arguments[0], strings.Join(arguments[1:], " ")); err != nil {
 		return fmt.Sprintf("[error] %s", err.Error())
 	}
 
