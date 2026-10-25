@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pythagoras rearrangement</title>
+<style>
+:root{--text-primary:#1f1e1d;--text-secondary:#5f5e5a;--surface-1:#f1efe8;--border:#c9c7bf;--bg:#ffffff;--accent:#534AB7}
+@media (prefers-color-scheme: dark){:root{--text-primary:#ecebe6;--text-secondary:#b4b2a9;--surface-1:#2c2c2a;--border:#5f5e5a;--bg:#1a1a19;--accent:#AFA9EC}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--text-primary);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:560px;margin:0 auto}
+.row{display:flex;align-items:center;gap:12px;margin:0 0 10px}
+.row label{font-size:14px;color:var(--text-secondary);min-width:84px}
+.row span{font-size:14px;font-weight:500;min-width:28px}
+button{font:inherit;font-size:14px;padding:6px 12px;border:1px solid var(--border);border-radius:8px;background:transparent;color:var(--text-primary);cursor:pointer;min-width:150px}
+button:hover{background:var(--surface-1)}
+.card{background:var(--surface-1);border-radius:8px;padding:0.75rem 1rem}
+.card .k{font-size:13px;color:var(--text-secondary)}
+.card .v{font-size:22px;font-weight:500}
+.lbl{font-size:15px;font-weight:500;fill:#26215C}
+.edge{font-size:14px;fill:var(--text-primary)}
+.note{font-size:13px;color:var(--text-secondary);margin:10px 0 0}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="row"><label for="sa">Side a</label><input type="range" id="sa" min="1" max="10" step="1" value="3" style="flex:1"><span id="oa">3</span></div>
+<div class="row"><label for="sb">Side b</label><input type="range" id="sb" min="1" max="10" step="1" value="4" style="flex:1"><span id="ob">4</span></div>
+<div class="row"><label for="st">Rearrange</label><input type="range" id="st" min="0" max="100" step="1" value="0" style="flex:1"><button id="play">Rearrange</button></div>
+<svg id="cv" viewBox="0 0 420 420" style="width:100%;max-width:420px;display:block;margin:8px auto;color:var(--text-primary)"></svg>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:8px">
+<div class="card"><div class="k">a² + b²</div><div class="v" id="m1">25</div></div>
+<div class="card"><div class="k">c² (big square)</div><div class="v" id="m2">25</div></div>
+<div class="card"><div class="k">Middle square side</div><div class="v" id="m3">1</div></div>
+</div>
+<p id="note" class="note" style="min-height:20px"></p>
+<p class="note"><span class="sw" style="background:#F0997B"></span> moving triangles &nbsp; <span class="sw" style="background:#5DCAA5"></span> fixed triangles &nbsp; <span class="sw" style="background:#FAC775"></span> (b − a) square</p>
+</div>
+<script>
+const sa=document.getElementById('sa'),sb=document.getElementById('sb'),st=document.getElementById('st'),cv=document.getElementById('cv'),btn=document.getElementById('play');
+let t=0,anim=null;
+function rot(pts,cx,cy,th){const c=Math.cos(th),s=Math.sin(th);return pts.map(([x,y])=>{const dx=x-cx,dy=y-cy;return[cx+dx*c-dy*s,cy+dx*s+dy*c]})}
+function draw(){
+const A=+sa.value,B=+sb.value;document.getElementById('oa').textContent=A;document.getElementById('ob').textContent=B;
+const p=Math.min(A,B),q=Math.max(A,B),swap=A>B,ln=swap?'b':'a',bn=swap?'a':'b';
+const S=330/(p+q),M=45,H=420;
+const X=x=>M+x*S,Y=y=>H-M-y*S;
+const poly=(pts,fill)=>`<polygon points="${pts.map(([x,y])=>X(x).toFixed(1)+','+Y(y).toFixed(1)).join(' ')}" fill="${fill}" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>`;
+const e=t<0.5?2*t*t:1-Math.pow(-2*t+2,2)/2,th=e*Math.PI/2;
+const T1=rot([[0,0],[p,0],[0,q]],0,q,th),T2=rot([[p,0],[p+q,0],[p+q,p]],p+q,p,-th);
+let g='';
+g+=poly([[0,q],[p,q],[p,0]],'#5DCAA5');
+g+=poly([[p,0],[p+q,p],[p,p]],'#5DCAA5');
+if(q>p)g+=poly([[p,p],[q,p],[q,q],[p,q]],'#FAC775');
+g+=poly(T1,'#F0997B');g+=poly(T2,'#F0997B');
+const o0=Math.max(0,1-2*e),o1=Math.max(0,2*e-1);
+g+=`<g opacity="${o0}"><rect x="${X(0)}" y="${Y(q)}" width="${q*S}" height="${q*S}" fill="none" stroke="#534AB7" stroke-width="2.5" stroke-dasharray="6 4"/><rect x="${X(q)}" y="${Y(p)}" width="${p*S}" height="${p*S}" fill="none" stroke="#534AB7" stroke-width="2.5" stroke-dasharray="6 4"/>`;
+g+=`<text class="edge" x="${X(q/2)}" y="${Y(0)+20}" text-anchor="middle">${bn}</text><text class="edge" x="${X(q+p/2)}" y="${Y(0)+20}" text-anchor="middle">${ln}</text><text class="edge" x="${X(0)-14}" y="${Y(q/2)}" text-anchor="middle" dominant-baseline="central">${bn}</text><text class="edge" x="${X(p+q)+14}" y="${Y(p/2)}" text-anchor="middle" dominant-baseline="central">${ln}</text>`;
+g+=`<rect x="${X(q/2)-20}" y="${Y(q*0.78)-13}" width="40" height="26" rx="4" fill="#EEEDFE"/><text class="lbl" x="${X(q/2)}" y="${Y(q*0.78)}" text-anchor="middle" dominant-baseline="central">${bn}²</text>`;
+g+=`<rect x="${X(q+p/2)-20}" y="${Y(p/2)-13}" width="40" height="26" rx="4" fill="#EEEDFE"/><text class="lbl" x="${X(q+p/2)}" y="${Y(p/2)}" text-anchor="middle" dominant-baseline="central">${ln}²</text></g>`;
+const sq=[[0,q],[p,0],[p+q,p],[q,p+q]];
+const L=Math.hypot(p,q),nx=-q/L,ny=-p/L;
+const cy=(p+q)/2+(q>p?(q-p)/2:0);
+g+=`<g opacity="${o1}"><polygon points="${sq.map(([x,y])=>X(x)+','+Y(y)).join(' ')}" fill="none" stroke="#534AB7" stroke-width="2.5" stroke-dasharray="6 4"/><text class="edge" x="${X(p/2)+nx*18}" y="${Y(q/2)-ny*18}" text-anchor="middle" dominant-baseline="central">c</text><text class="edge" x="${X(p+q/2)+p/L*18}" y="${Y(p/2)+q/L*18}" text-anchor="middle" dominant-baseline="central">c</text>`;
+g+=`<rect x="${X((p+q)/2)-20}" y="${Y(cy)-13}" width="40" height="26" rx="4" fill="#EEEDFE"/><text class="lbl" x="${X((p+q)/2)}" y="${Y(cy)}" text-anchor="middle" dominant-baseline="central">c²</text></g>`;
+cv.innerHTML=g;
+document.getElementById('m1').textContent=A*A+B*B;
+document.getElementById('m2').textContent=p*p+q*q;
+document.getElementById('m3').textContent=q-p;
+document.getElementById('note').textContent=A===B?'a = b: the middle square has side 0, so it disappears. The other four pieces still fit both ways.':swap?'a > b here, so the drawing just swaps the names of the two legs. The argument is the same.':'';
+btn.textContent=t>0.5?'Rearrange back':'Rearrange';
+}
+function animate(){if(anim)cancelAnimationFrame(anim);const to=t>0.5?0:1,from=t,t0=performance.now(),D=1400;
+function step(now){const k=Math.min(1,(now-t0)/D);t=from+(to-from)*k;st.value=Math.round(t*100);draw();if(k<1)anim=requestAnimationFrame(step);else anim=null}
+anim=requestAnimationFrame(step)}
+btn.onclick=animate;
+st.oninput=()=>{if(anim){cancelAnimationFrame(anim);anim=null}t=st.value/100;draw()};
+sa.oninput=draw;sb.oninput=draw;
+draw();
+</script>
+</body>
+</html>
