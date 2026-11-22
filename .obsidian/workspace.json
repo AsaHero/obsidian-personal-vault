@@ -4,62 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "0080da43b3031c54",
+        "id": "ef49885668830399",
         "type": "split",
         "children": [
           {
-            "id": "2c432fa45e6d1c2c",
+            "id": "57e44199e784d55a",
             "type": "tabs",
             "children": [
               {
-                "id": "4f911f76f1b769c6",
+                "id": "d361eac839a46859",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Discrete Math/28. Sequences.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "28. Sequences"
+                }
+              },
+              {
+                "id": "6c9d65780636e528",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Skiena - The Algorithm Design Manual/The Algorithm Design Manual [2020] Steven S. Skiena.pdf"
+                    "file": "Discrete Math/Discrete Mathematics with Applications [2020] Susanna S. Epp.pdf"
                   },
                   "icon": "lucide-file-text",
-                  "title": "The Algorithm Design Manual [2020] Steven S. Skiena"
-                }
-              },
-              {
-                "id": "680ea5eae234f9ad",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "00 Учёба/B — Ровный/Дискретка.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Дискретка"
-                }
-              },
-              {
-                "id": "237b38033324a333",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "00 Учёба/B — Ровный/Дискретка.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Дискретка"
+                  "title": "Discrete Mathematics with Applications [2020] Susanna S. Epp"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
-            "id": "742122bd9cd08f4b",
+            "id": "b3d4ea354da226d6",
             "type": "tabs",
             "children": [
               {
-                "id": "c5d9454d7b806b97",
+                "id": "018afdc91fc05560",
                 "type": "leaf",
                 "state": {
                   "type": "terminal-view",
@@ -105,7 +90,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "NotifyContext",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -193,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Учёба/B — Ровный/Дискретка.md",
+                "file": "Discrete Math/Discrete Mathematics with Applications [2020] Susanna S. Epp.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -216,7 +201,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00 Учёба/B — Ровный/Дискретка.md",
+                "file": "Discrete Math/Discrete Mathematics with Applications [2020] Susanna S. Epp.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -251,7 +236,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 463.5
+    "width": 463.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -268,54 +254,54 @@
       "termy:Open terminal": false
     }
   },
-  "active": "c5d9454d7b806b97",
+  "active": "018afdc91fc05560",
   "lastOpenFiles": [
-    "00 Учёба/B — Ровный/Дискретка.md.tmp.166824.d3604ba78b41",
-    "00 Учёба/B — Ровный/Дискретка.md.tmp.166824.7384b23116a5",
-    "00 Учёба/B — Ровный/Дискретка.md.tmp.166824.480344f87203",
-    "00 Учёба/B — Ровный/Дискретка.md.tmp.166824.b09e0836939c",
-    "Discrete Math/Discrete Mathematics with Applications [2020] Susanna S. Epp.pdf",
-    "00 Учёба/B — Ровный/Skiena.md.tmp.166824.7f0a32e49600",
-    "00 Учёба/B — Ровный/Skiena.md.tmp.166824.f157d4b46c20",
-    "00 Учёба/B — Ровный/Skiena.md.tmp.166824.d15b70ff86d7",
-    "00 Учёба/Рельсы.md.tmp.166824.eae25cfa7f73",
-    "00 Учёба/Рельсы.md.tmp.166824.1d9dc5d4426e",
-    "00 Учёба/Рельсы.md.tmp.166824.800b78abedc1",
-    "00 Учёба/B — Ровный/Skiena.md",
-    "Discrete Math/7. Two Sets Relations.md",
-    "Discrete Math/6. Cartesian Product.md",
-    "Discrete Math/5. Ordered Pairs.md",
-    "Discrete Math/4. Empty Set.md",
-    "Discrete Math/3. Set-Builder Notation.md",
-    "Discrete Math/2. Set-Roster Notation.md",
-    "Discrete Math/1. Sets.md",
-    "MCS/5. Sets and Tuples.md",
+    "Discrete Math/33. Strong Induction.md",
+    "Discrete Math/9. Logical Statements.md",
+    "Discrete Math/32. Fibonacci Sequence.md",
+    "Discrete Math/31. Recursive Sequences.md",
+    "Discrete Math/29. Induction.md",
+    "Discrete Math/28. Sequences.md",
+    "Discrete Math/33. Strong Induction.md.tmp.10017.92ab04b75ca6",
+    "Discrete Math/32. Fibonacci Sequence.md.tmp.10017.142d745c400d",
+    "Discrete Math/31. Recursive Sequences.md.tmp.10017.615ae61a7c32",
+    "Discrete Math/30. Induction with Inequalities.md",
+    "Discrete Math/30. Induction with Inequalities.md.tmp.10017.ea0da341ecda",
+    "Discrete Math/29. Induction.md.tmp.10017.48b4b0e74ed4",
+    "Discrete Math/28. Sequences.md.tmp.10017.c0e5f4d59e1c",
+    "Discrete Math/Pasted image 20261122014710.png",
+    "Discrete Math/Pasted image 20261122014643.png",
+    "Discrete Math/Pasted image 20261122014505.png",
+    "Discrete Math/Pasted image 20261122014445.png",
+    "Discrete Math/Pasted image 20261122014425.png",
+    "Discrete Math/Pasted image 20261122014102.png",
+    "Discrete Math/Pasted image 20261122013957.png",
+    "Discrete Math/Pasted image 20261122013530.png",
+    "Discrete Math/Pasted image 20261122013230.png",
+    "Discrete Math/Pasted image 20261122013157.png",
+    "Discrete Math/30. String Induction.md",
     "00 Учёба/B — Ровный/Дискретка.md",
-    "00 Учёба/Рельсы.md",
-    "00 Учёба/Парковка.md",
-    "MCS/9. Proof by Contradiction.md",
-    "MCS/8. Proving Implications.md",
-    "MCS/Problems/1.4 AM-GM.md",
-    "MCS/Problems/1.2 Bogus Proof that 1 = −1.md",
-    "Math/Fundamental Math/Solving Inequalities.md",
-    "Math/Fundamental Math/Two Variable Equations.md",
-    "Math/Fundamental Math/y-intercept.md",
-    "Math/Fundamental Math/Equations.md",
-    "Math/Fundamental Math/Inequalities.md",
-    "MCS/Problems/1.1 Pythagoras Triangles.md",
-    "MCS/1. What is a Proof.md",
-    "Media/Pasted image 20261010200434.png",
+    "Discrete Math/Практика/Набор 1 — Решения.md",
     "MCS/12. Proof by Cases.md",
-    "MCS/13. Strong Induction.md",
-    "Media/Pasted image 20260917171701.png",
-    "Media/Pasted image 20260916185237.png",
-    "Media/Pasted image 20260916185024.png",
-    "Media/Pasted image 20260916184910.png",
-    "Media/Pasted image 20260916184230.png",
-    "Media/Pasted image 20260912183302.png",
-    "Media/Pasted image 20260912183228.png",
-    "Media/Pasted image 20260912182713.png",
-    "Media/Pasted image 20260912181726.png",
+    "Discrete Math/Практика/Набор 1 — Блоки 1–3.md",
+    "Discrete Math/27. There are Infinitely Many Primes.md",
+    "Discrete Math/Discrete Mathematics with Applications [2020] Susanna S. Epp.pdf",
+    "00 Учёба/B — Ровный/Skiena.md",
+    "Discrete Math/25. Proof by Contrapositive.md",
+    "Discrete Math/20. Rational Numbers.md",
+    "Discrete Math/26. Quotient-Remainder Theorem and Modular Arithmetic.md",
+    "Skiena - The Algorithm Design Manual/The Algorithm Design Manual [2020] Steven S. Skiena.pdf",
+    "Discrete Math/12. Conditional Statements.md",
+    "00 Учёба/C — Лёгкий/How Linux Works.md",
+    "Discrete Math/11. Logical Equivalence.md",
+    "Discrete Math/21. Divisibility is Transitive.md",
+    "Discrete Math/15. Universal and Existential Quantifiers.md",
+    "Discrete Math/19. Writing a Proof from Scratch.md",
+    "Discrete Math/18. Direct Proof.md",
+    "Discrete Math/14. Predicates and Statements.md",
+    "Discrete Math/16. Negating Quantifiers.md",
+    "00 Учёба/Рельсы.md.tmp.46980.48382e78e200",
+    "00 Учёба/B — Ровный/Дискретка.md.tmp.46980.bd4214eb363d",
     "YouTube/Plan/Brainstorm.canvas"
   ]
 }
