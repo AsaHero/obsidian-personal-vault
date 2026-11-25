@@ -4,59 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "ef49885668830399",
-        "type": "split",
+        "id": "57e44199e784d55a",
+        "type": "tabs",
         "children": [
           {
-            "id": "57e44199e784d55a",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "d361eac839a46859",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Discrete Math/28. Sequences.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "28. Sequences"
-                }
+            "id": "d361eac839a46859",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Discrete Math/Практика/Набор 2 — Блок 4.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "6c9d65780636e528",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Discrete Math/Discrete Mathematics with Applications [2020] Susanna S. Epp.pdf"
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "Discrete Mathematics with Applications [2020] Susanna S. Epp"
-                }
-              }
-            ]
+              "icon": "lucide-file",
+              "title": "Набор 2 — Блок 4"
+            }
           },
           {
-            "id": "b3d4ea354da226d6",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "018afdc91fc05560",
-                "type": "leaf",
-                "state": {
-                  "type": "terminal-view",
-                  "state": {},
-                  "icon": "terminal",
-                  "title": "Terminal"
-                }
-              }
-            ]
+            "id": "6c9d65780636e528",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Discrete Math/Discrete Mathematics with Applications [2020] Susanna S. Epp.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Discrete Mathematics with Applications [2020] Susanna S. Epp"
+            }
+          },
+          {
+            "id": "e81f70eb3aa9ca72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Учёба/B — Ровный/Skiena.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Skiena"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -254,21 +245,29 @@
       "termy:Open terminal": false
     }
   },
-  "active": "018afdc91fc05560",
+  "active": "d361eac839a46859",
   "lastOpenFiles": [
     "Discrete Math/33. Strong Induction.md",
+    "Discrete Math/Практика/Набор 2 — Решения.md.tmp.8348.ed3e5cd74b95",
+    "Discrete Math/Практика/Набор 2 — Решения.md.tmp.8348.132d162135e1",
+    "Discrete Math/Практика/Набор 2 — Решения.md.tmp.8348.eadefed438e0",
+    "Discrete Math/Практика/Набор 2 — Блок 4.md.tmp.8348.d301e07e62b5",
+    "Discrete Math/Практика/Набор 2 — Решения.md",
+    "Discrete Math/Практика/Набор 2 — Решения.md.tmp.8348.22f7863283d0",
+    "Discrete Math/Практика/Набор 2 — Блок 4.md",
+    "Discrete Math/Практика/Набор 2 — Блок 4.md.tmp.8348.87f4259f4700",
     "Discrete Math/9. Logical Statements.md",
     "Discrete Math/32. Fibonacci Sequence.md",
     "Discrete Math/31. Recursive Sequences.md",
+    "00 Учёба/B — Ровный/Skiena.md",
+    "00 Учёба/B — Ровный/Дискретка.md",
+    "Discrete Math/30. Induction with Inequalities.md",
     "Discrete Math/29. Induction.md",
     "Discrete Math/28. Sequences.md",
     "Discrete Math/33. Strong Induction.md.tmp.10017.92ab04b75ca6",
     "Discrete Math/32. Fibonacci Sequence.md.tmp.10017.142d745c400d",
     "Discrete Math/31. Recursive Sequences.md.tmp.10017.615ae61a7c32",
-    "Discrete Math/30. Induction with Inequalities.md",
     "Discrete Math/30. Induction with Inequalities.md.tmp.10017.ea0da341ecda",
-    "Discrete Math/29. Induction.md.tmp.10017.48b4b0e74ed4",
-    "Discrete Math/28. Sequences.md.tmp.10017.c0e5f4d59e1c",
     "Discrete Math/Pasted image 20261122014710.png",
     "Discrete Math/Pasted image 20261122014643.png",
     "Discrete Math/Pasted image 20261122014505.png",
@@ -280,28 +279,19 @@
     "Discrete Math/Pasted image 20261122013230.png",
     "Discrete Math/Pasted image 20261122013157.png",
     "Discrete Math/30. String Induction.md",
-    "00 Учёба/B — Ровный/Дискретка.md",
     "Discrete Math/Практика/Набор 1 — Решения.md",
     "MCS/12. Proof by Cases.md",
     "Discrete Math/Практика/Набор 1 — Блоки 1–3.md",
     "Discrete Math/27. There are Infinitely Many Primes.md",
-    "Discrete Math/Discrete Mathematics with Applications [2020] Susanna S. Epp.pdf",
-    "00 Учёба/B — Ровный/Skiena.md",
     "Discrete Math/25. Proof by Contrapositive.md",
     "Discrete Math/20. Rational Numbers.md",
     "Discrete Math/26. Quotient-Remainder Theorem and Modular Arithmetic.md",
-    "Skiena - The Algorithm Design Manual/The Algorithm Design Manual [2020] Steven S. Skiena.pdf",
     "Discrete Math/12. Conditional Statements.md",
     "00 Учёба/C — Лёгкий/How Linux Works.md",
     "Discrete Math/11. Logical Equivalence.md",
     "Discrete Math/21. Divisibility is Transitive.md",
     "Discrete Math/15. Universal and Existential Quantifiers.md",
     "Discrete Math/19. Writing a Proof from Scratch.md",
-    "Discrete Math/18. Direct Proof.md",
-    "Discrete Math/14. Predicates and Statements.md",
-    "Discrete Math/16. Negating Quantifiers.md",
-    "00 Учёба/Рельсы.md.tmp.46980.48382e78e200",
-    "00 Учёба/B — Ровный/Дискретка.md.tmp.46980.bd4214eb363d",
     "YouTube/Plan/Brainstorm.canvas"
   ]
 }
